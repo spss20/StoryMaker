@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".views.PublishActivity">
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:background="@drawable/publish_activity_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/pick_app_icon" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:hint="App Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:minWidth="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Package Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/open_advanced"
+            android:layout_width="200dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advanced"
+                android:layout_gravity="end"
+                android:textSize="16sp"
+                />
+            <ImageView
+                android:id="@+id/ic_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                />
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:el_duration="1000"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Version Code">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/versionCode"
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:layout_height="59dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:hint="Version Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/versionName"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/build_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/parent_view"
+        android:layout_alignEnd="@id/parent_view"
+        android:layout_alignBottom="@+id/parent_view"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:background="@drawable/button_bg_3"
+        android:fontFamily="@font/muli_bold"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:text="Build App"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_hammer" />
+
+</RelativeLayout>

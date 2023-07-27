@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:scrollbars="vertical"
+        android:gravity="bottom"
+        android:background="@drawable/output_bg"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:id="@+id/view_stepped_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Stepped"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</LinearLayout>

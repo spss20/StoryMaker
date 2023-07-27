@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "538277318259",
+    "project_id": "lublu-b0baa",
+    "storage_bucket": "lublu-b0baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538277318259:android:f32603abe93e6d5d41e406",
+        "android_client_info": {
+          "package_name": "com.ssoftwares.lublu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538277318259-p55tkb7dss96am3srqs25epae0q4a55p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ssoftwares.lublu",
+            "certificate_hash": "0c97cae1b7585498fb1065db26a73edc56c72271"
+          }
+        },
+        {
+          "client_id": "538277318259-jjhekrolun6plcshfaavvff60ls2cjoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwNRqlzCloiFJ_Lz6gq-tYwR2_fvRr6cU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538277318259-jjhekrolun6plcshfaavvff60ls2cjoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

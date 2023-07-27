@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/select_template_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Choose Template"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <android.widget.Button
+        android:id="@+id/pick_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick From Gallery"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_3"
+        android:textSize="17sp"
+        android:layout_margin="@dimen/dimen_10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/templates_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_4"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_15dp">
+
+    <Button
+        android:id="@+id/view_raw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Raw"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+        android:foreground="?selectableItemBackground"
+        app:backgroundTint="@color/colorPrimaryTransparent"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        />
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        app:sv_animationType="All"
+        app:sv_stepPadding="12dp"
+        app:sv_typeface="@font/iran_sans_mobile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/copy_url"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_copy"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateTint="@color/white"
+            android:progress="25"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/error_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_error_24"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/iran_sans_mobile"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Configuring the basic things"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/download_apk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Download Apk"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
